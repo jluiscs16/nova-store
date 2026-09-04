@@ -1,0 +1,20 @@
+:root {
+    --bg-main: #000000;
+    --bg-surface: #121212;
+    --bg-surface-hover: #1e1e1e;
+
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+    --text-highlight: #f59e0b;
+
+    --btn-primary-bg: #f59e0b;
+    --btn-primary-text: #000000;
+    --btn-primary-hover: #d97706;
+
+    --btn-secondary-bg: #27272a;
+    --btn-secondary-text: #ffffff;
+    --btn-secondary-hover: #3f3f46;
+
+    --border-section: #27272a;
+    --border-interactive: #f59e0b;
+}
