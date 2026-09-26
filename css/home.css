@@ -1,0 +1,46 @@
+.page-loader {
+    position: fixed;
+    display: grid;
+    background-color: var(--bg-surface);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    place-items: center;
+}
+
+.load-bars {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 90px;
+    gap: 10px;
+}
+
+.bars {
+    background-color: white;
+    height: 100%;
+    width: 10%;
+    border-radius: 20px;
+    animation: load-animation 1s infinite alternate-reverse ease-in-out;
+}
+
+/* Barras impares (1, 3, 5...) */
+.bars:nth-child(odd) {
+    animation-delay: 0s;
+}
+
+/* Barras pares (2, 4, 6...) */
+.bars:nth-child(even) {
+    animation-delay: -0.5s; /* Empiezan a mitad de camino */
+}
+
+@keyframes load-animation {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 30%; /* Reducido un poco para que el efecto sea más marcado */
+    }
+}

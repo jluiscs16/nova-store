@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaStore</title>
+    <!-- Tipografía Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/home.js" defer></script>
+</head>
+
+<body>
+    <div class="page-loader">
+        <div class="load-bars">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+            <div class="bars" id="bar4"></div>
+            <div class="bars" id="bar4"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="header__brand-anchor">
+            <span class="header__brand header__brand--primary">Nova</span>
+            <span class="header__brand header__brand--highlight">Store</span>
+        </a>
+
+        <div class="header__nav-wrapper">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Ofertas</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__toggle-btn" aria-label="Cambiar tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="header__menu-btn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menú Lateral (Drawer) -->
+    <aside class="drawer-menu">
+        <div class="drawer-menu__utils">
+            <button class="drawer-menu__toggle-btn" aria-label="Cambiar tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="drawer-menu__close-btn" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="drawer-menu__list">
+            <li><a href="#" class="drawer-menu__link">Inicio</a></li>
+            <li><a href="#" class="drawer-menu__link">Productos</a></li>
+            <li><a href="#" class="drawer-menu__link">Ofertas</a></li>
+            <li><a href="#" class="drawer-menu__link">Contacto</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+        <section class="hero">
+            <div class="hero__overlay"></div>
+
+            <div class="hero__container">
+                <!-- Bloque Izquierdo: Mensaje Principal -->
+                <div class="hero__content">
+                    <span class="hero__badge">
+                        <i class="fa-solid fa-sparkles"></i> Colección 2026
+                    </span>
+                    <h1 class="hero__title">
+                        Descubre el futuro de la <span class="hero__title--highlight">Tecnología</span>
+                    </h1>
+                    <p class="hero__description">
+                        Únete a la comunidad de NovaStore. Obtén acceso anticipado a nuestros lanzamientos y recibe un
+                        <strong>15% de descuento</strong> en tu primera compra.
+                    </p>
+                    <div class="hero__features">
+                        <div class="hero__feature-item">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <span>Envíos Rápidos</span>
+                        </div>
+                        <div class="hero__feature-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Garantía Oficial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque Derecho: Formulario -->
+                <form class="hero__form form" action="#" method="POST" novalidate>
+                    <div class="form__header">
+                        <h2 class="form__title">Crea tu Cuenta</h2>
+                        <p class="form__subtitle">Ingresa tus datos para comenzar</p>
+                    </div>
+
+                    <fieldset class="form__group">
+                        <legend class="form__legend">Información Personal</legend>
+
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="first-name" class="form__label">Nombre</label>
+                                <input type="text" id="first-name" name="first_name" class="form__input"
+                                    placeholder="Ej. Juan" required>
+                            </div>
+                            <div class="form__field">
+                                <label for="last-name" class="form__label">Apellido</label>
+                                <input type="text" id="last-name" name="last_name" class="form__input"
+                                    placeholder="Ej. Pérez" required>
+                            </div>
+                        </div>
+
+                        <div class="form__field">
+                            <label for="email" class="form__label">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form__input"
+                                placeholder="ejemplo@correo.com" required>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="form__button">
+                        Obtener Descuento <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <p class="form__footer-note">
+                        Sin spam. Puedes cancelar tu suscripción en cualquier momento.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__subtitle">Sobre NovaStore</h3>
+                <p>Tu tienda de confianza para los mejores productos tecnológicos.</p>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__subtitle">Síguenos</h3>
+                <div class="footer__social-links">
+                    <a href="#" class="footer__social-link" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="Twitter"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 NovaStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
